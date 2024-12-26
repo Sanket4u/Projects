@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Ordering</title>
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <form  method="post" id="myForm">
+<div class="container">
+  
+  <div class="menu">
+    <h2>Food Menu</h2>
+    
+    <label for="name"></label>
+    <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required><br><br>
+        
+     <!-- Add more menu items here -->
+    <ul>
+      <li class="menu-item">
+        <input type="checkbox" id="Burger" name="items" value="Burger">
+        <input type="hidden" name="price" value="10.99">
+        <img src="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" alt="Burger">
+        <div>
+          <h3>Burger</h3>
+          <p>Delicious burger</p>
+          <p>Price: $10.99</p>
+        </div>
+      </li>
+      
+      <li class="menu-item">
+        <input type="checkbox" id="Pizza" name="items" value="Pizza">
+        <input type="hidden" name="price" value="20.10">
+        <img src="https://t3.ftcdn.net/jpg/05/60/70/82/360_F_560708240_pMZPOuSfvblWGRoaiZFLT4wiFTzQPwQe.jpg" alt="Pizza">
+        <div>
+          <h3>Pizza</h3>
+          <p>Delicious Pizza</p>
+          <p>Price: $20.10</p>
+        </div>
+      </li>
+
+      <li class="menu-item">
+        <input type="checkbox" id="Cold Coffee" name="items" value="Cold Coffee">
+        <input type="hidden" name="price" value="5.00">
+        <img src="https://images7.alphacoders.com/132/1323971.png" alt="Cold Coffee">
+        <div>
+          <h3>Cold Coffee</h3>
+          <p>Chilled Cold Coffee</p>
+          <p>Price: $5.00</p>
+        </div>
+      </li>
+
+    </ul>
+
+    <div class="buttons">
+      <button id="placeOrder" input type="submit"  formaction="/submit" >Place Order</button>
+      <button id="clearOrder" value="Reset">Clear</button>
+    </div>
+
+  </div>
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Food Order Admin Panel</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Items</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+                <tr>
+                    <td>{{ order[0] }}</td>  <!-- Access name from tuple -->
+                    <td>{{ order[1] }}</td>  <!-- Access items from tuple -->
+                    <td>{{ order[2] }}</td> 
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

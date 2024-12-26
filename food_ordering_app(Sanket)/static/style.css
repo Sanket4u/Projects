@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(236, 216, 191);
+  }
+  
+  
+  .menu {
+    flex: 1;
+    border: 1px solid white;
+    padding: 10px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item img {
+    width: 200px;
+    height: 130px;
+    margin-right: 20px;
+  }
+  
+  
+  .buttons button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    background-color: #056d07;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .buttons button:hover {
+    background-color:rgb(21, 189, 18) ;
+  }
